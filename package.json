@@ -7,7 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "db:create": "createdb books-app",
-    "bd:init": "psql -f schema.sql books-app && psql -f seed.sql books-app",
+    "db:init": "psql -f schema.sql books-app && psql -f seed.sql books-app",
     "db:destroy": "dropdb books-app",
     "db:reset": "npm run db:destroy; npm run db:create && npm run db:init",
     "test": "mocha",

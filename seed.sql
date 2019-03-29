@@ -6,5 +6,5 @@ values
     ('The Line Becomes a River', 'Francisco Cantu', 'Autobiographical'),
     ('Good and Mad', 'Rebecca Traister', 'lit'),
     ('Crice', 'Madiline Miller', 'humor'),
-    ('Early Work', 'Andrew Martin', 'history'),
+    ('Early Work', 'Andrew Martin', 'history')
 ;
