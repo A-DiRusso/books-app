@@ -1,4 +1,4 @@
-const db = require('/conn');
+const db = require('./conn');
 
 class Books {
     constructor(id, title, author, genre) {
@@ -10,7 +10,7 @@ class Books {
 
     static getById(id) {
         return db.one(`select * from books where id=${id}`)
-            .then((burritoData) => {
+            .then((bookData) => {
                 const bookInstance = new Books(bookData.id,
                                                bookData.title,
                                                bookData.author,

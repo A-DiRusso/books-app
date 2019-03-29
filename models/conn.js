@@ -9,7 +9,7 @@ const pgp = require('pg-promise')({
 
 const options = {
     host: 'localhost',
-    database: 'coffee.orders-app'
+    database: 'books-app'
 };
 
 //make a connection to the database sepcified by the options object
