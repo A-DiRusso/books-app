@@ -15,7 +15,7 @@ describe('sanity check', () => {
 });
 
 describe('books model', () => {
-    it('should retieve book by id', async () => {
+    it('should retrieve book by id', async () => {
         const bookData = await Books.getById(4);
         console.log(bookData);
         expect(bookData).to.be.an.instanceOf(Books);
@@ -28,5 +28,5 @@ describe('books model', () => {
     it('should be able to retrieve all books', async () => {
         const allBooks = await Books.getAll();
         expect(allBooks).to.be.an.instanceOf(Array);
-    })
-})
+    });
+});

@@ -27,13 +27,14 @@ class Books {
         return db.any(`select * from books`)
             .then((arrayOfBooks) => {
                 return arrayOfBooks.map((bookData) => {
-                    const aBook = new Books(
+                    const allBooks = new Books(
                         bookData.id,
                         bookData.title,
                         bookData.author,
                         bookData.genre
                     );
-                    return aBook;
+                    console.log(allBooks);
+                    return allBooks;
                 });
             })
     }
